@@ -1,0 +1,257 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\altera\projetos\Aula10\processadorNrisc\simulation\modelsim
+vControle
+I7Thj`7nKN7P_aJP?03nOj3
+VNEHg@h6l7>d@3^mW2Pk`11
+Z1 dF:\altera\projetos\Aula10\processadorNrisc\simulation\modelsim
+w1617994799
+8F:/altera/projetos/Aula10/processadorNrisc/controle.v
+FF:/altera/projetos/Aula10/processadorNrisc/controle.v
+L0 8
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc -O0
+n@controle
+!i10b 1
+!s100 nT4[foZklF=z^@zJEcVlN0
+!s85 0
+!s108 1625081887.867000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/controle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/controle.v|
+!s101 -O0
+vExtensor
+I>dB0FT2I^QDzbTlPFJQHN3
+V[U7k2[`;a`5NKlR;XbKhd1
+R1
+w1617127590
+8F:/altera/projetos/Aula10/processadorNrisc/extensor.v
+FF:/altera/projetos/Aula10/processadorNrisc/extensor.v
+L0 8
+R2
+r1
+31
+R3
+R4
+n@extensor
+!i10b 1
+!s100 VhbVZWaYlc_PA7bdMA_Vd1
+!s85 0
+!s108 1625081888.090000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/extensor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/extensor.v|
+!s101 -O0
+vExtensor2to8
+IChCN<LAY><hn0Xo@BQCB61
+VK_d`R8l`R6e4BD@b;Wi@^0
+R1
+w1617719346
+8F:/altera/projetos/Aula10/processadorNrisc/extensor2to8.v
+FF:/altera/projetos/Aula10/processadorNrisc/extensor2to8.v
+L0 8
+R2
+r1
+31
+R3
+R4
+n@extensor2to8
+!i10b 1
+!s100 ZTznA;l14D6JN[mHeMU4C3
+!s85 0
+!s108 1625081889.281000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/extensor2to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/extensor2to8.v|
+!s101 -O0
+vExtensor5to8
+IAzlm`;Fl`dG:]GEce>fL:0
+VdbZd]j0@WK9MH7hhh3RB]0
+R1
+w1617723064
+8F:/altera/projetos/Aula10/processadorNrisc/extensor5to8.v
+FF:/altera/projetos/Aula10/processadorNrisc/extensor5to8.v
+L0 8
+R2
+r1
+31
+R3
+R4
+n@extensor5to8
+!i10b 1
+!s100 =Wgf_ebEj6Rljbe:8Onh01
+!s85 0
+!s108 1625081889.076000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/extensor5to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/extensor5to8.v|
+!s101 -O0
+vMemDados
+!i10b 1
+!s100 O2Zoh7zI=lci?]=Jke1^S2
+I9n2FGB@efcO;kj4C2l1:i1
+VW0PPZWjfO:Z3GH2b7Necj1
+R1
+Z5 w1618000590
+FF:/altera/projetos/Aula10/processadorNrisc/MemDados.v
+Z6 8F:/altera/projetos/Aula10/processadorNrisc/simula.v
+Z7 FF:/altera/projetos/Aula10/processadorNrisc/simula.v
+L0 7
+R2
+r1
+!s85 0
+31
+Z8 !s108 1625081889.479000
+Z9 !s107 F:/altera/projetos/Aula10/processadorNrisc/MemDados.v|F:/altera/projetos/Aula10/processadorNrisc/MemInstrucao.v|F:/altera/projetos/Aula10/processadorNrisc/simula.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/simula.v|
+!s101 -O0
+R3
+R4
+n@mem@dados
+vMemInstrucao
+!i10b 1
+!s100 I[eFT=3HB56^ZMTLe<8`:1
+IbzSMY^c4H?ocS=dDhVTAN1
+V7ZPV`5GWj5oieaQSAG@da1
+R1
+R5
+FF:/altera/projetos/Aula10/processadorNrisc/MemInstrucao.v
+R6
+R7
+L0 7
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R3
+R4
+n@mem@instrucao
+vMUX
+IN7`3Vimf8H>JCC]7eX6a_1
+VM4bJU5n@=n01e1S;c;;GD2
+R1
+w1617128020
+8F:/altera/projetos/Aula10/processadorNrisc/mux.v
+FF:/altera/projetos/Aula10/processadorNrisc/mux.v
+L0 8
+R2
+r1
+31
+R3
+R4
+n@m@u@x
+!i10b 1
+!s100 U;Y:6;2Z>B`Hm1>n_P6@S0
+!s85 0
+!s108 1625081888.268000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/mux.v|
+!s101 -O0
+vPC
+IP0bn1Yi`M6bh_bhmNz]Yl2
+V>bSl1Fg<jaSeJfb:=YLza0
+R1
+w1617643285
+8F:/altera/projetos/Aula10/processadorNrisc/pc.v
+FF:/altera/projetos/Aula10/processadorNrisc/pc.v
+L0 7
+R2
+r1
+31
+R3
+R4
+n@p@c
+!i10b 1
+!s100 BS;5LTo5kQ1o0HjhDeG4Y1
+!s85 0
+!s108 1625081888.873000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/pc.v|
+!s101 -O0
+vprocessadorNrisc
+Iz[Xi3`MT<k98G<>U6i4l13
+V`_6Ma@IS2XzoD<7b5o5P:3
+R1
+w1617997640
+8F:/altera/projetos/Aula10/processadorNrisc/processadorNrisc.v
+FF:/altera/projetos/Aula10/processadorNrisc/processadorNrisc.v
+L0 7
+R2
+r1
+31
+R3
+nprocessador@nrisc
+R4
+!i10b 1
+!s100 MUao1>lnaa=Y`a<]]jjVj0
+!s85 0
+!s108 1625081887.663000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/processadorNrisc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/processadorNrisc.v|
+!s101 -O0
+vregistradores
+InTU4C7LHeV0hoG4ajEERz0
+V`bHb6_HKlc^:D@ac4TYnl3
+R1
+w1617715899
+8F:/altera/projetos/Aula10/processadorNrisc/registradores.v
+FF:/altera/projetos/Aula10/processadorNrisc/registradores.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 FNRUZ7OcV?<>Q;aYBX^Lc0
+!s85 0
+!s108 1625081888.674000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/registradores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/registradores.v|
+!s101 -O0
+vsimula
+!i10b 1
+!s100 dz0z8>MCR:FDMo9[Y_6m^1
+IA:=@^z33]oVeUIk1GKa[^2
+VdhdZD?PcIDXEnl`i7l@_J2
+R1
+R5
+R6
+R7
+L0 5
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R3
+R4
+vULA
+I7b3j@imO:AmEYMmT47]VX0
+VJS[^PSUR_GD]o?MEOC_OY0
+R1
+w1617994590
+8F:/altera/projetos/Aula10/processadorNrisc/ula.v
+FF:/altera/projetos/Aula10/processadorNrisc/ula.v
+L0 8
+R2
+r1
+31
+R3
+R4
+n@u@l@a
+!i10b 1
+!s100 k:>QHP8Z?5Q^E@j^Kz@6?3
+!s85 0
+!s108 1625081888.472000
+!s107 F:/altera/projetos/Aula10/processadorNrisc/ula.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/altera/projetos/Aula10/processadorNrisc|F:/altera/projetos/Aula10/processadorNrisc/ula.v|
+!s101 -O0

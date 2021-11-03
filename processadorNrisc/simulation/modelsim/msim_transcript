@@ -1,0 +1,3458 @@
+# Reading F:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do processadorNrisc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/processadorNrisc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processadorNrisc
+# 
+# Top level modules:
+# 	processadorNrisc
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/controle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controle
+# 
+# Top level modules:
+# 	Controle
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/extensor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Extensor
+# 
+# Top level modules:
+# 	Extensor
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX
+# 
+# Top level modules:
+# 	MUX
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/ula.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA
+# 
+# Top level modules:
+# 	ULA
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/registradores.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registradores
+# 
+# Top level modules:
+# 	registradores
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/extensor5to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Extensor5to8
+# 
+# Top level modules:
+# 	Extensor5to8
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/extensor2to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Extensor2to8
+# 
+# Top level modules:
+# 	Extensor2to8
+# 
+# vlog -vlog01compat -work work +incdir+F:/altera/projetos/Aula10/processadorNrisc {F:/altera/projetos/Aula10/processadorNrisc/simula.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MemInstrucao
+# -- Compiling module MemDados
+# -- Compiling module simula
+# 
+# Top level modules:
+# 	simula
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  simula
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps simula 
+# Loading work.simula
+# Loading work.MemInstrucao
+# Loading work.MemDados
+# Loading work.processadorNrisc
+# Loading work.Controle
+# Loading work.Extensor
+# Loading work.MUX
+# Loading work.ULA
+# Loading work.registradores
+# Loading work.PC
+# Loading work.Extensor5to8
+# Loading work.Extensor2to8
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = xxxxxxxx
+# Clock = 0
+# PC = 00010100 -> @d 20
+# -------------------------------------------------
+# Controle
+# EscPC = x
+# FonteReg = x
+# Jump = x
+# EscreverMemoria = x
+# LerMemoria = x
+# ULAFonte = x
+# BEQ = x
+# ULAOp = xxx
+# -------------------------------------------------
+# Registradores
+# Reg00 =   0
+# Reg01 =   0
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = x
+# REG 1 = x
+# REG 2 = x
+# DadoPraEscrever =   x
+# RegEscrito = x
+# Dado1 =   x
+# Dado2 =   x
+# -------------------------------------------------
+# ULA
+# DADO 1 =   x
+# DADO 2 =   x
+# RESULT =   x
+# ZERO   = x
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 11100000
+# Clock = 1
+# PC = 00010100 -> @d 20
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 1
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 1
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 111
+# -------------------------------------------------
+# Registradores
+# Reg00 =   0
+# Reg01 =   0
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 0
+# REG 2 = 0
+# DadoPraEscrever =   x
+# RegEscrito = 0
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   0
+# RESULT =   0
+# ZERO   = x
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 11100000
+# Clock = 0
+# PC = 00010100 -> @d 20
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 1
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 1
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 111
+# -------------------------------------------------
+# Registradores
+# Reg00 =   0
+# Reg01 =   0
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 0
+# REG 2 = 0
+# DadoPraEscrever =  15
+# RegEscrito = 0
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   0
+# RESULT =   0
+# ZERO   = x
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00001111
+# Clock = 1
+# PC = 00010101 -> @d 21
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 000
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 3
+# DadoPraEscrever =   7
+# RegEscrito = 1
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   7
+# RESULT =   7
+# ZERO   = x
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00001111
+# Clock = 0
+# PC = 00010101 -> @d 21
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 000
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 3
+# DadoPraEscrever =   7
+# RegEscrito = 1
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   7
+# RESULT =   7
+# ZERO   = x
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  10
+# RegEscrito = 1
+# Dado1 =   7
+# Dado2 =   7
+# -------------------------------------------------
+# ULA
+# DADO 1 =   7
+# DADO 2 =   3
+# RESULT =  10
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  10
+# RegEscrito = 1
+# Dado1 =   7
+# Dado2 =   7
+# -------------------------------------------------
+# ULA
+# DADO 1 =   7
+# DADO 2 =   3
+# RESULT =  10
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =   0
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =  15
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =   0
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =   0
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =  15
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   6
+# RegEscrito = 1
+# Dado1 =   7
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   7
+# DADO 2 =   1
+# RESULT =   6
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   7
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   6
+# RegEscrito = 1
+# Dado1 =   7
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   7
+# DADO 2 =   1
+# RESULT =   6
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =   0
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =  15
+# RESULT =   0
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =   0
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =  15
+# RESULT =   0
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =   0     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =   6
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =   6
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  15
+# RegEscrito = 1
+# Dado1 =   6
+# Dado2 =   6
+# -------------------------------------------------
+# ULA
+# DADO 1 =   6
+# DADO 2 =   3
+# RESULT =  15
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  15
+# RegEscrito = 1
+# Dado1 =   6
+# Dado2 =   6
+# -------------------------------------------------
+# ULA
+# DADO 1 =   6
+# DADO 2 =   3
+# RESULT =  15
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =  15
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  15
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  15
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =  15
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   5
+# RegEscrito = 1
+# Dado1 =   6
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   6
+# DADO 2 =   1
+# RESULT =   5
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   6
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   5
+# RegEscrito = 1
+# Dado1 =   6
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   6
+# DADO 2 =   1
+# RESULT =   5
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =  15
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  15
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =  15
+# RESULT =  15
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  15     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =   6
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =   6
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  30
+# RegEscrito = 1
+# Dado1 =   5
+# Dado2 =   5
+# -------------------------------------------------
+# ULA
+# DADO 1 =   5
+# DADO 2 =   3
+# RESULT =  30
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  30
+# RegEscrito = 1
+# Dado1 =   5
+# Dado2 =   5
+# -------------------------------------------------
+# ULA
+# DADO 1 =   5
+# DADO 2 =   3
+# RESULT =  30
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =  15
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  30
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  30
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  30
+# DADO 2 =  15
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   4
+# RegEscrito = 1
+# Dado1 =   5
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   5
+# DADO 2 =   1
+# RESULT =   4
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   5
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   4
+# RegEscrito = 1
+# Dado1 =   5
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   5
+# DADO 2 =   1
+# RESULT =   4
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =  15
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  30
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =  15
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  30     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =   6
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =   6
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  45
+# RegEscrito = 1
+# Dado1 =   4
+# Dado2 =   4
+# -------------------------------------------------
+# ULA
+# DADO 1 =   4
+# DADO 2 =   3
+# RESULT =  45
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  45
+# RegEscrito = 1
+# Dado1 =   4
+# Dado2 =   4
+# -------------------------------------------------
+# ULA
+# DADO 1 =   4
+# DADO 2 =   3
+# RESULT =  45
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =  15
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  45
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  45
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  45
+# DADO 2 =  15
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   3
+# RegEscrito = 1
+# Dado1 =   4
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   4
+# DADO 2 =   1
+# RESULT =   3
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   4
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   3
+# RegEscrito = 1
+# Dado1 =   4
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   4
+# DADO 2 =   1
+# RESULT =   3
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =  15
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  45
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =  15
+# RESULT =  45
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  45     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =   6
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =   6
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  60
+# RegEscrito = 1
+# Dado1 =   3
+# Dado2 =   3
+# -------------------------------------------------
+# ULA
+# DADO 1 =   3
+# DADO 2 =   3
+# RESULT =  60
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  60
+# RegEscrito = 1
+# Dado1 =   3
+# Dado2 =   3
+# -------------------------------------------------
+# ULA
+# DADO 1 =   3
+# DADO 2 =   3
+# RESULT =  60
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =  15
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  60
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  60
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  60
+# DADO 2 =  15
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   2
+# RegEscrito = 1
+# Dado1 =   3
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   3
+# DADO 2 =   1
+# RESULT =   2
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   3
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   2
+# RegEscrito = 1
+# Dado1 =   3
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   3
+# DADO 2 =   1
+# RESULT =   2
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =  15
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  60
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =  15
+# RESULT =  60
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  60     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =   6
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =   6
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  75
+# RegEscrito = 1
+# Dado1 =   2
+# Dado2 =   2
+# -------------------------------------------------
+# ULA
+# DADO 1 =   2
+# DADO 2 =   3
+# RESULT =  75
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  75
+# RegEscrito = 1
+# Dado1 =   2
+# Dado2 =   2
+# -------------------------------------------------
+# ULA
+# DADO 1 =   2
+# DADO 2 =   3
+# RESULT =  75
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =  15
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  75
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 =  75
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  75
+# DADO 2 =  15
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   1
+# RegEscrito = 1
+# Dado1 =   2
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   2
+# DADO 2 =   1
+# RESULT =   1
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   2
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   1
+# RegEscrito = 1
+# Dado1 =   2
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   2
+# DADO 2 =   1
+# RESULT =   1
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =  15
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  75
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =  15
+# RESULT =  75
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  75     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =   6
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =   6
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  90
+# RegEscrito = 1
+# Dado1 =   1
+# Dado2 =   1
+# -------------------------------------------------
+# ULA
+# DADO 1 =   1
+# DADO 2 =   3
+# RESULT =  90
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever =  90
+# RegEscrito = 1
+# Dado1 =   1
+# Dado2 =   1
+# -------------------------------------------------
+# ULA
+# DADO 1 =   1
+# DADO 2 =   3
+# RESULT =  90
+# ZERO   = 0
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 1
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever = 105
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =  15
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 00110000
+# Clock = 0
+# PC = 00010111 -> @d 23
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 001
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 =  90
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever = 105
+# RegEscrito = 2
+# Dado1 =  90
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  90
+# DADO 2 =  15
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 1
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   0
+# RegEscrito = 1
+# Dado1 =   1
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   1
+# DADO 2 =   1
+# RESULT =   0
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01001001
+# Clock = 0
+# PC = 00011000 -> @d 24
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 010
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   1
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 1
+# REG 1 = 1
+# REG 2 = 0
+# DadoPraEscrever =   0
+# RegEscrito = 1
+# Dado1 =   1
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =   1
+# DADO 2 =   1
+# RESULT =   0
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 1
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 = 105
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 = 105
+# DADO 2 =  15
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10110001
+# Clock = 0
+# PC = 00011001 -> @d 25
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 1
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 101
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 0
+# DadoPraEscrever =  90
+# RegEscrito = 2
+# Dado1 = 105
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 = 105
+# DADO 2 =  15
+# RESULT =  90
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] =  90     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 1
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever = 105
+# RegEscrito = 2
+# Dado1 = 105
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 = 105
+# DADO 2 =   6
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] = 105     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 10010110
+# Clock = 0
+# PC = 00011010 -> @d 26
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 1
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 0
+# ULAOp = 100
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 2
+# REG 2 = 3
+# DadoPraEscrever = 105
+# RegEscrito = 2
+# Dado1 = 105
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 = 105
+# DADO 2 =   6
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] = 105     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 1
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever = 105
+# RegEscrito = 1
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   3
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] = 105     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 01101011
+# Clock = 0
+# PC = 00010110 -> @d 22
+# -------------------------------------------------
+# Controle
+# EscPC = 1
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 1
+# BEQ = 1
+# ULAOp = 011
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 1
+# REG 2 = 1
+# DadoPraEscrever = 105
+# RegEscrito = 1
+# Dado1 =   0
+# Dado2 =   0
+# -------------------------------------------------
+# ULA
+# DADO 1 =   0
+# DADO 2 =   3
+# RESULT = 105
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] = 105     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# PC E INSTRUCAO
+# Instrucao = 11000000
+# Clock = 1
+# PC = 00000011 -> @d  3
+# -------------------------------------------------
+# Controle
+# EscPC = 0
+# FonteReg = 0
+# Jump = 0
+# EscreverMemoria = 0
+# LerMemoria = 0
+# ULAFonte = 0
+# BEQ = 0
+# ULAOp = 000
+# -------------------------------------------------
+# Registradores
+# Reg00 =  15
+# Reg01 =   0
+# Reg02 = 105
+# Reg03 =   0
+# Sinal RegWrite = 0
+# REG 1 = 0
+# REG 2 = 0
+# DadoPraEscrever =  30
+# RegEscrito = 0
+# Dado1 =  15
+# Dado2 =  15
+# -------------------------------------------------
+# ULA
+# DADO 1 =  15
+# DADO 2 =  15
+# RESULT =  30
+# ZERO   = 1
+# -------------------------------------------------
+# MEM_DADOS
+# memoria[0] =  15     
+# memoria[1] = 105     
+# memoria[2] =   0     
+# -------------------------------------------------
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+# 
+# ** Note: $finish    : F:/altera/projetos/Aula10/processadorNrisc/simula.v(158)
+#    Time: 77 ps  Iteration: 0  Instance: /simula
+# 1
+# Break in Module simula at F:/altera/projetos/Aula10/processadorNrisc/simula.v line 158
+# Simulation Breakpoint: 1
+# Break in Module simula at F:/altera/projetos/Aula10/processadorNrisc/simula.v line 158
+# MACRO ./processadorNrisc_run_msim_rtl_verilog.do PAUSED at line 25

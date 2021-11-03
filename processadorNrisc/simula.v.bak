@@ -1,0 +1,15 @@
+module simula;
+
+//module processadorNrisc(instr, DadoLido, PC, Endereco, DadoPraEscrever, 
+//										clock, reset, EscreverMemoria, LerMemoria);
+
+reg clock;
+wire [7:0] instr, DadoLido, EnderecoInstrucaoPC, Endereco, DadoPraEscrever;
+wire EscreverMemoria, LerMemoria;
+
+//module MemInstrucao(Endereco, instr, clock);
+
+
+
+
+endmodule

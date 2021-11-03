@@ -1,0 +1,19 @@
+/*
+Implementação em Verilog dos componentes do nRisc que armazenam estado.
+Aluno: Alexandre Roque.
+Disciplina: Arquitetura e Organização de Computadores.
+Professor: Mateus Felipe Tymburibá Ferreira.
+*/
+module PC (proxPC, PC, SinalEscPC, clock, reset);
+    input SinalEscPC, clock, reset;
+	 input [7:0] proxPC;
+    output reg [7:0] PC;
+    always begin
+        @(posedge clock)
+        if (!reset & SinalEscPC)
+            PC <= proxPC;
+        else
+            PC <= 0;
+    end //always
+endmodule
+
